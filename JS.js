@@ -13,6 +13,17 @@ bizde buraada submitfunction() fonksiyonumuzun çalışmasını istedik*/
 //NOVALIDATE: 
 /*novalidate = Aktif olduğu sürece gönderdiğiniz form datanızın otomatik olarak doğrulanmamasını söyler.*/
 
+/*FORMUN YENİLENMESİNİ ENGELLEYEN event.preventDefault() //default işlemi engelledik*/
+let formDOM = document.querySelector("#myForm") //form >userformun userform etketi
+formDOM.addEventListener('submit',formSubmit) //userformun>submit etiketine fonksiyon tanımladı
+
+function formSubmit(event){//
+    event.preventDefault() //default işlemi engelledik
+    console.log("islem gerçekleşti")
+}
+/*FORMUN YENİLENMESİNİ ENGELLEYEN event.preventDefault() //default işlemi engelledik*/
+
+
 function submitFunction() {
     let firstnameDOM = document.getElementById("firstname").value //firstname id li dokümanın valuesini( içindeki bilgi) aldık
     
